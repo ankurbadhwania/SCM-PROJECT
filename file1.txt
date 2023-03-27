@@ -2,7 +2,7 @@ import pyautogui as pg
 import fontstyle
 import random
 def line():
-    print(fontstyle.apply("___________________________________________",'red'))
+    print(fontstyle.apply("____________________________________________",'red'))
 
 line()
 def scoreboard(x,y,score1,score2):
