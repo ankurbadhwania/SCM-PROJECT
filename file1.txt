@@ -13,8 +13,8 @@ def scoreboard(x,y,score1,score2):
     print("""          {} : {}          """.format(y,score2))
     print("""---------------------------""")
 
-p=pg.password("ENTER PASSWORD")
-k=True
+p = pg.password("ENTER PASSWORD")
+k = True
 if p =="chitkara":
     while k:
         line()
