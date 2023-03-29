@@ -1,0 +1,22 @@
+  line()
+            i=int(input("No. of Games : "))
+            line()
+            player = 0
+            computer = 0
+            for m in range(i):
+                n=input("Enter Stone/Paper/Scissors : ")
+                list=["Stone","Paper","Scissors"]
+                a=random.choice(list)
+                print("Computer Choose :",a)
+
+                if n in ["Stone",'stone','STONE']:
+                    if a=="Paper":
+                        computer+=1
+                    elif a=="Scissors":
+                        player=+1
+
+                if n in ["Paper",'paper','PAPER']: 
+                    if a=="Stone":
+                        player+=1
+                    elif a=="Scissors":
+                        computer+=1
