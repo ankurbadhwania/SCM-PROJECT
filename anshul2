@@ -1,0 +1,28 @@
+  if n in ["Paper",'paper','PAPER']: 
+                    if a=="Stone":
+                        player+=1
+                    elif a=="Scissors":
+                        computer+=1
+
+                if n in ["Scissors","SCISSORS",'scissors']:
+                    if a=="Paper":
+                        player+=1
+                    elif a=="Stone":
+                        computer+=1
+                scoreboard('Player','Computer',player,computer)
+
+                line()
+            if player>computer:
+                text=fontstyle.apply("           Player Wins ","bold/green")
+                print(text)
+            elif computer>player:
+                text=fontstyle.apply("           Computer Wins ","bold/green")
+                print(text)
+            else:
+                text=fontstyle.apply("          Tie","bold/green")
+                print(text)
+       
+        else:
+            k=False
+else:
+    print("WRONG PASSWORD")
