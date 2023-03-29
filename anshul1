@@ -1,1 +1,50 @@
+import pyautogui as pg
+import fontstyle
+import random
+def line():
+    print(fontstyle.apply("____________________________________________",'red'))
+
+line()
+def scoreboard(x,y,score1,score2):
+    print("""---------------------------""")
+    print("""         SCOREBOARD        """)
+    print("""---------------------------""")
+    print("""          {} : {}          """.format(x,score1))
+    print("""          {} : {}          """.format(y,score2))
+    print("""---------------------------""")
+
+p = pg.password("ENTER PASSWORD")
+k = True
+if p =="chitkara":
+    while k:
+        line()
+        print("""1 : STONE/PAPER/SCISSORS""")
+        line()
+        cho=int(input("GAME NUMBER : "))
+        print()
+        if cho==1:
+            print( """   ---------          / /  --------------   / /    /\  /\                                                
+ / /-------\ \       / /   / /-------/ /   / /     \ \/ /                                                                   
+/ /         \ \     / /   / /       / /   / /       \ \/                                                                                                                                 
+| |         | |    / /   / /       / /   / /       / \ \                                                                   
+\ \         / /   / /   / /       / /   / /       / / \ \                                                                
+ \ \-------/ /   / /   / /-------/ /   / /      /( )\ /( )\                                                             
+   ---------    / /   -------------   / /       \___/ \___/                                                               
+   """)
+            line()
+            i=int(input("No. of Games : "))
+            line()
+            player = 0
+            computer = 0
+            for m in range(i):
+                n=input("Enter Stone/Paper/Scissors : ")
+                list=["Stone","Paper","Scissors"]
+                a=random.choice(list)
+                print("Computer Choose :",a)
+
+                if n in ["Stone",'stone','STONE']:
+                    if a=="Paper":
+                        computer+=1
+                    elif a=="Scissors":
+                        player=+1
 
